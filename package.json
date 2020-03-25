@@ -1,0 +1,22 @@
+{
+  "name": "annual-meeting",
+  "version": "1.0.0",
+  "description": "Connects OpaVote with slack for better voting experience in the EA NTNU annual meeting of 2020",
+  "main": "src/app.mjs",
+  "engines": {
+    "node": ">=13.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "jsdom": "^16.2.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "set NODE_ENV=dev && node --harmony-top-level-await ./src/app.js",
+    "prod": "set NODE_ENV=production && node --harmony-top-level-await ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Håkon Harnes",
+  "license": "MIT"
+}

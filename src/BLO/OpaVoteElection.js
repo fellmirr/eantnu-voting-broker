@@ -26,6 +26,8 @@ export const OpaVoteElectionLogic = async (electionID, voters) => {
         //Send every voter a button to vote
         try {
             await Slack.post(voters[i].id, VoteBotBlocks(title), VoteBotElectionButton(electionID, codes[i]));
+            //Guard against API rate limitation
+            await sleep(100)
         }
         catch(ex) {
             console.error(`Failed to send code ${codes[i]} to ${voters[i].real_name} (${voters[i].name})`)

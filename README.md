@@ -14,9 +14,11 @@ NodeJS 13.3 or greater
 
 You need to define the following environment variables for the application to run properly.
 
+```
 SLACK_CHANNEL_ID
 SLACK_API_TOKEN
 OPAVOTE_API_KEY
+```
 
 ## Executing
 

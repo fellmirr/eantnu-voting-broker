@@ -1,6 +1,6 @@
 # eantnu-voting-broker
 
-Logs in to OpaVote and sends voting codes to all the people specified in the `config/voters` json files.
+Logs in to OpaVote and sends voting codes on slack to all the people specified in the `config/voters` json files.
 
 ## Prerequisites
 

@@ -1,4 +1,4 @@
-import request from 'request'
+import request from 'request-promise-native'
 import jsdom from 'jsdom';
 import { OPAVOTE_API_KEY } from '../../config.js'
 
@@ -80,7 +80,6 @@ class OpaVote {
                 jar: cookieJar,
                 formData: data
             })
-            console.log(res)
         }
         catch(ex) {
             //302 redirect, is a success, otherwise throw

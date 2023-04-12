@@ -1,4 +1,4 @@
-import request from 'request'
+import request from 'request-promise-native'
 import { SLACK_API_TOKEN } from './../../config.js'
 
 class Slack {
